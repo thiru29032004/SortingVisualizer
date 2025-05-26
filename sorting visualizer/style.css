@@ -1,0 +1,85 @@
+/* Main heading styles */
+.heading {
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    margin: 20px 50px 0 50px;
+    background-color: lightgray;
+    font-size: 20px;
+}
+
+/* Container for all input controls */
+.arrcontainer {
+    display: flex;
+    flex-wrap: wrap; /* responsive wrapping */
+    gap: 20px;
+    margin: 10px 50px;
+    padding: 10px;
+    background-color: lightgray;
+    justify-content: center;
+}
+
+/* Each control box */
+.arrcontainer .card {
+    min-width: 220px;
+    flex: 1;
+    max-width: 250px;
+}
+
+/* Labels and input elements */
+.arrcontainer label {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+.arrcontainer select,
+.arrcontainer input {
+    margin-top: 3px;
+    width: 100%;
+    height: 26px;
+}
+
+/* Button styling */
+.arrcontainer button {
+    margin-top: 23px;
+    width: 100%;
+    height: 30px;
+    font-size: 16px;
+}
+
+/* Visualizer area */
+#bars {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    gap: 5px;
+    height: 300px;
+    margin: 20px 50px;
+}
+
+/* Individual bars */
+.bar {
+    background-color: steelblue;
+    width: 20px;
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+    .heading {
+        margin: 10px;
+        font-size: 18px;
+    }
+
+    .arrcontainer {
+        margin: 10px;
+        padding: 10px;
+    }
+
+    #bars {
+        margin: 10px;
+    }
+
+    .bar {
+        width: 8px;
+    }
+}

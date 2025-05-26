@@ -1,0 +1,59 @@
+<!-- Sorting Visualizer Main Page -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tag for responsiveness -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Linking external CSS -->
+    <link rel="stylesheet" href="style.css">
+    <title>Sorting Visualizer</title>
+</head>
+<body>
+
+    <!-- Heading Section -->
+    <div class="heading"><h1><b>Sorting Visualizer</b></h1></div>
+
+    <!-- Controls for sorting -->
+    <div class="arrcontainer">
+        <!-- Dropdown to select algorithm -->
+        <div class="card">
+            <label for="algo-select">Select Algorithm</label><br>
+            <select id="algo-select">
+                <option value="">Select Algorithm</option>
+                <option value="bubbleSort">Bubble Sort</option>
+                <option value="insertionSort">Insertion Sort</option>
+                <option value="mergeSort">Merge Sort</option>
+            </select>
+        </div>
+
+        <!-- Input for array size -->
+        <div class="card">
+            <label for="arrsize">Array Size</label><br>
+            <input type="number" id="arrsize" name="arrsize" min="1" max="500" oninput="generateBars()">
+        </div>
+
+        <!-- Dropdown to select speed -->
+        <div class="card">
+            <label for="speed">Speed</label><br>
+            <select name="speed" id="speed">
+                <option value="slow">Slow</option>
+                <option value="medium">Medium</option>
+                <option value="High">High</option>
+            </select>
+        </div>
+
+        <!-- Sort button -->
+        <div class="card">
+            <button onclick="sortBars()">Sort</button>
+        </div>
+    </div>
+
+    <!-- Container to show bars -->
+    <div id="bars"></div>
+
+    <!-- JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
